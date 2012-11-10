@@ -1,0 +1,14 @@
+body { font-family: 'Droid Sans', Helvetica, Tahoma, Verdana, sans-serif; padding: 50px; }
+
+	dt { clear: both; }
+	dd { margin-bottom: 20px; }
+		.checkbox { display: inline-block; }
+		.avatar_sml { float: left; height: 50px; margin: 3px; width: 50px; }
+		.mini_icon { height: 16px; width: 16px; }
+		.psn_toggle, .steam_toggle, .xbl_toggle { cursor: pointer; }
+
+	.game_image { height: 80px; }
+
+	button img { vertical-align: middle; }
+
+	footer { font-size: .8em;  text-align: right; }
