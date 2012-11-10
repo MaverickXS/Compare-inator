@@ -30,19 +30,19 @@
                     <div class="container">
                         <a href="/" class="brand pull-left">Compare-inator</a>
                         <ul class="nav pull-left">
-                            <li<? if ($active_link==''){ ?> class="active"<? } ?>><a href="/"><span class="icon-home icon-white"></span> Home</a></li>
-                            <li<? if ($active_link=='user'){ ?> class="active"<? } ?>><a href="/user_list/"><span class="icon-user icon-white"></span> Users</a></li>
-                            <li<? if ($active_link=='game'){ ?> class="active"<? } ?>><a href="/game_list/"><span class="icon-headphones icon-white"></span> Games</a></li>
+                            <li<? if ($active_link==''){ ?> class="active"<? } ?>><a href="/"><span class="icon-home"></span> Home</a></li>
+                            <li<? if ($active_link=='user'){ ?> class="active"<? } ?>><a href="/user_list/"><span class="icon-user"></span> Users</a></li>
+                            <li<? if ($active_link=='game'){ ?> class="active"<? } ?>><a href="/game_list/"><span class="icon-headphones"></span> Games</a></li>
                         </ul>
                         <form class="navbar-search pull-left"><input type="search" class="search-query" placeholder="Search" /></form>
 
                         <ul class="nav pull-right">
                             <? if ($logged_in){ ?>
                                 <li class="navbar-text<? if ($active_link=='login'){ ?> active<? } ?>">Game on, <strong><a href="/dashboard/"><?=$user['username'];?></a></strong>!</li>
-                                <li><a href="/logout/"><span class="icon-off icon-white"></span> Logout</a></li>
+                                <li><a href="/logout/"><span class="icon-off"></span> Logout</a></li>
                             <? } else { ?>
-                                <li<? if ($active_link=='login'){ ?> class="active"<? } ?>><a href="/login/"><span class="icon-off icon-white"></span> Login</a></li>
-                                <li<? if ($active_link=='register'){ ?> class="active"<? } ?>><a href="/register/"><span class="icon-pencil icon-white"></span> Register</a></li>
+                                <li<? if ($active_link=='login'){ ?> class="active"<? } ?>><a href="/login/"><span class="icon-off"></span> Login</a></li>
+                                <li<? if ($active_link=='register'){ ?> class="active"<? } ?>><a href="/register/"><span class="icon-pencil"></span> Register</a></li>
                             <? } ?>
                         </ul>
                     </div>
